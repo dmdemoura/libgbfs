@@ -1,0 +1,10 @@
+build/
+*.a
+.directory
+.vscode/
+release/
+lib/
+documentation/
+.kdev4/
+*.kdev4
+compile_commands.json
