@@ -10,7 +10,7 @@ fi
 if [ ! -d build ]; then
     mkdir build
     cd build
-    cmake --DCMAKE_TOOLCHAIN_FILE=external/CmakeStuff/GBA.cmake -GNinja ..
+    cmake -DCMAKE_TOOLCHAIN_FILE=external/CmakeStuff/GBA.cmake -GNinja ..
 else
     cd build
 fi
