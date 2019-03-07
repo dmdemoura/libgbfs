@@ -24,10 +24,10 @@ target_include_directories(libgbfs
 
 include(GNUInstallDirs)
 install(TARGETS libgbfs
-    EXPORT gbfs-config
+    EXPORT libgbfs-config
     LIBRARY DESTINATION ${CMAKE_INSTALL_LIBDIR}
     ARCHIVE DESTINATION ${CMAKE_INSTALL_LIBDIR}
 )
 install(DIRECTORY include/ DESTINATION ${CMAKE_INSTALL_INCLUDEDIR})
 
-install(EXPORT gbfs-config DESTINATION ${CMAKE_INSTALL_DATADIR}/libgbfs)
+install(EXPORT libgbfs-config DESTINATION ${CMAKE_INSTALL_DATADIR}/libgbfs)
