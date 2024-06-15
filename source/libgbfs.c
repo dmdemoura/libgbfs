@@ -105,7 +105,7 @@ const void *gbfs_get_obj(const GBFS_FILE *file,
                          const char *name,
                          unsigned int *len)
 {
-  char key[24] = {0};
+  char key[25] = {0};
 
   const GBFS_ENTRY *dirbase = (const GBFS_ENTRY *)((const char *)file + file->dir_off);
   size_t n_entries = file->dir_nmemb;
